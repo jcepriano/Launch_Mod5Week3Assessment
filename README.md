@@ -15,7 +15,7 @@ Check out a new branch and complete the following tasks **in order**:
 * 2 points - Create a descriptive pull request and merge this branch into main
 * 2 points - Take a screenshot of a database query result from pgAdmin that clearly shows which users in your database are librarians.  Update this README to include your screenshot below:
 
-  < YOUR SCREENSHOT SHOULD GO HERE >
+  ![image](https://github.com/turingschool-examples/Launch_Mod5Week3Assessment/assets/130601095/ce0d59c2-bd60-4ada-a144-42b3393c15b7)
 
   
 
