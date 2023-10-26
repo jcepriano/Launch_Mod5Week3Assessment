@@ -24,6 +24,7 @@ namespace JeffersonCountyLibrary.Controllers
         }
 
         // GET: Books/Create
+        [Authorize(Roles = "Librarian")]
         public IActionResult Create()
         {
             ViewData["BranchId"] = new SelectList(_context.Branches, "Id", "Id");
@@ -45,6 +46,7 @@ namespace JeffersonCountyLibrary.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public IActionResult CheckOut(int? id)
         {
             var book = _context.Books.Find(id);
