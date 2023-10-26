@@ -23,11 +23,21 @@ Check out a new branch and complete the following tasks **in order**:
 
 Answer the questions below in this README.  Answer these questions as if you are in an interview!
 
-1. What are roles and claims as they relate to Authentication and Authorization?
+1. What are roles and claims as they relate to Authentication and Authorization? \
+   Roles are a form of authorization used to create a sort of hierarchy between different accounts in an application. Roles make it so you can authorize only certain accounts to do specific things in an application.
+   For example, I could create an "Admin" role. With that, in an MVC application, I could make it so only accounts with an "Admin" role could access a specific action. Claims are pretty similar
+   in this aspect. Claims are another form of authorization. Stored as key/value pairs, they use authorization based on specific attributes that can be different between accounts. A common claim is an age authenticator.
+   Some websites first ask for a user's age before allowing the user to proceed to the main page, this is known as a claim. Some users may or may not be old enough to enter and interact with the website, but other users
+   are. Making it so only certain users can do certain things in the app based on attributes that can change.
 
-2. How do cookies play a role in authentication and authorization?
+3. How do cookies play a role in authentication and authorization? \
+   Cookies allow for information about an account to be stored and checked. They are used to determine if an account has access to specific actions based on the account's role and/or claims.
+   For example, if a user logs into an application, a cookie is set containing some sort of authentication. The application can use the information stored in the cookie to authorize what the user
+   can and can't access in the app. 
 
-3. If asked to implement Auth in a new .NET application, would you use the Identity framework?
+5. If asked to implement Auth in a new .NET application, would you use the Identity framework? \
+   Yes, I would prefer to use Identity Framework instead of doing it manually. Identity Framework has a lot of code being made in the background. It also creates a user object automatically. The Identity Framework
+   also generates forms for an application. There are certain aspects of it that can be tricky to work with sometimes, but the benefits of it very much outweigh the more difficult parts of using Identity Framework.
 
 ## Rubric
 
